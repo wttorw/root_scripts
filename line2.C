@@ -88,12 +88,12 @@ void line2(const char *file1,const char *file2,float inf=0.,float sup=6000.){
 	
 	
         
-	auto size = 1.3;
+    auto size = 1.3;
     gr1->SetMarkerStyle(20);
     gr1->SetMarkerSize(size);
     gr1->SetMarkerColor(kBlue);
     gr2->SetMarkerStyle(22);
-	gr2->SetMarkerSize(size);   
+    gr2->SetMarkerSize(size);   
     gr2->SetMarkerColor(kRed);
 
 
@@ -120,24 +120,6 @@ void line2(const char *file1,const char *file2,float inf=0.,float sup=6000.){
     auto *res2 = residui(gr2,ex2);
 
 
-    cout << "q: " <<ex1->GetParameter(0)/ex1->GetParameter(1) << "\tm: " << 1/ex1->GetParameter(1) << endl;
-   	cout << "q: " <<ex2->GetParameter(0)/ex2->GetParameter(1) << "\tm: " << 1/ex2->GetParameter(1) << endl;
-       	
-	
-	cout << "t0: " <<  (ex1->GetParameter(1)-1.)/ex1->GetParError(1) << endl;
-	cout << "t1: " <<  (ex2->GetParameter(1)-1.)/ex2->GetParError(1) << endl;
-
-    
-     int dof = 3;
-     double alpha = 0.05;
-     
-     // Two-tailed test: look for t such that P(|T| > t) = 0.05
-     double tcrit = TMath::StudentQuantile(1-alpha/2, dof);
-     printf("t_crit (95%%): %.5f\n", tcrit); 
-
-	cout << "r0: " << gr1->GetCorrelationFactor() << endl;
-	cout << "r1: " << gr2->GetCorrelationFactor() << endl;
-	
     auto *grall = new TMultiGraph();
     grall->Add(gr1);
     grall->Add(gr1);
