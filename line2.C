@@ -98,7 +98,6 @@ void line2(const char *file1,const char *file2,float inf=0.,float sup=6000.){
 
 
 
-    // Define the Breit-Wigner fit function
     
     TF1 *ex1 = new TF1("ex1","pol1", inf, sup);
     ex1->SetParameters(0.,1.);
