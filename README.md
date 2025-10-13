@@ -1,4 +1,4 @@
-line2.c is a simple program to plot two TF1 with residuals in the same canvas.
+line2.c is a simple script to plot two TF1 with residuals in the same canvas.
 
 Usage in ROOT env:
 .L line2.c
