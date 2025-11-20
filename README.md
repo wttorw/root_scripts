@@ -12,7 +12,7 @@ line2(file1,file2,inf,sup)
 file with classic root tsv format x y sx sy.
 Range of x axys: [inf,sup]
 
-![Example](git_line2.png)
+![Example](git_line.png)
 
 
 **bode_form.c**
