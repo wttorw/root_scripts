@@ -1,3 +1,5 @@
+Here I am uploading some ROOT scripts I wrote during my undergraduate physics laboratories. They might not be perfect, but I believe they capture some useful features that are sometimes difficult to find in forums and documentation.
+
 **Requirements**
 
 ROOT: The code relies on the ROOT data analysis framework. You can download and install ROOT from https://root.cern
