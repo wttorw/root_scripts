@@ -19,7 +19,7 @@ Range of x axys: [inf,sup]
 
 This C++ code is designed to analyze and visualize frequency response data, commonly used in signal processing or electrical circuit analysis. It uses the ROOT data analysis framework to fit the data to a mathematical model and visualize the results on a Bode plot. The code also calculates and displays residuals to evaluate the quality of the fit.
 
-Features
+Features:
 
 Bode Plot Generation: Generates a frequency response plot (Bode plot) with logarithmic scaling for the x-axis (frequency).
 
